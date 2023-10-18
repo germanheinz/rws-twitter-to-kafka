@@ -10,4 +10,11 @@
     <artifactId>twitter-to-kafka</artifactId>
     <name>Archetype - twitter-to-kafka</name>
     <url>http://maven.apache.org</url>
+    <dependencies>
+        <dependency>
+            <groupId>com.microservices.demo</groupId>
+            <artifactId>twitter-to-kafka-config</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>

@@ -31,7 +31,7 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>ccom.microservices.demo</groupId>
+            <groupId>com.microservices.demo</groupId>
             <artifactId>twitter-to-kafka-config</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
