@@ -9,8 +9,8 @@
     </parent>
     <groupId>org.example</groupId>
     <artifactId>kafka-admin</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <name>Archetype - kafka-admin</name>
-    <url>http://maven.apache.org</url>
 
 <dependencies>
     <dependency>
