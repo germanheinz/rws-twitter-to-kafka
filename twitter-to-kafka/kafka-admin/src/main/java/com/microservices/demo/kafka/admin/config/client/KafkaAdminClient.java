@@ -1,7 +1,7 @@
 package com.microservices.demo.kafka.admin.config.client;
 
-import com.microservices.demo.config.KafkaConfigData;
-import com.microservices.demo.config.RetryConfigData;
+import com.microservices.demo.twitter.to.kafka.config.KafkaConfigData;
+import com.microservices.demo.twitter.to.kafka.config.RetryConfigData;
 import org.apache.kafka.clients.admin.AdminClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
