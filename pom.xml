@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<modules>
-		<module>twitter-to-kafka-service</module>
         <module>twitter-to-kafka-config</module>
 		<module>twitter-to-kafka</module>
 		<module>twitter-to-kafka/kafka-admin</module>
 		<module>twitter-to-kafka/kafka-model</module>
 		<module>twitter-to-kafka/kafka-producer</module>
 		<module>twitter-to-kafka-common-config</module>
+		<module>twitter-to-kafka-service</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -30,9 +30,15 @@
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<twitter4j.version>4.0.7</twitter4j.version>
 		<lombok.version>1.18.16</lombok.version>
-		<spring-kafka.version>3.0.9</spring-kafka.version>
 		<spring-kafka-admin.version>0.0.1-SNAPSHOT</spring-kafka-admin.version>
 		<spring-retry.version>1.3.0</spring-retry.version>
+		<spring-kafka.version>2.6.2</spring-kafka.version>
+		<java.version>11</java.version>
+		<spring-boot.version>2.3.4.RELEASE</spring-boot.version>
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<lombok.version>1.18.16</lombok.version>
+		<avro.version>1.10.0</avro.version>
+		<kafka-avro-serializer.version>5.5.1</kafka-avro-serializer.version>
 	</properties>
 	<repositories>
 		<repository>
@@ -82,7 +88,7 @@
 			<dependency>
 				<groupId>org.springframework.kafka</groupId>
 				<artifactId>spring-kafka</artifactId>
-				<version>3.0.9</version>
+				<version>${spring-kafka.version}</version>
 			</dependency>
 
 			<dependency>
@@ -90,6 +96,13 @@
 				<artifactId>spring-retry</artifactId>
 				<version>${spring-retry.version}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-webflux</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+
 			<dependency>
 				<groupId>io.confluent</groupId>
 				<artifactId>kafka-avro-serializer</artifactId>
@@ -99,11 +112,12 @@
 			<dependency>
 				<groupId>org.example</groupId>
 				<artifactId>kafka-admin</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.example</groupId>
 				<artifactId>kafka-producer</artifactId>
+				<version>${project.version}</version>
 			</dependency>
 
 		</dependencies>

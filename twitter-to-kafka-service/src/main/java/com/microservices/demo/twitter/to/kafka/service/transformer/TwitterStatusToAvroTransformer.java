@@ -1,14 +1,13 @@
-package com.microservices.demo.twitter.to.kafka.service.mapper;
+package com.microservices.demo.twitter.to.kafka.service.transformer;
 
-
-import com.microservices.kafka.model.TwitterAvroModel;
+import com.microservices.demo.kafka.model.TwitterAvroModel;
 import org.springframework.stereotype.Component;
 import twitter4j.Status;
 
 @Component
-public class KafkaStatusToAvroMapper {
+public class TwitterStatusToAvroTransformer {
 
-    public TwitterAvroModel getTwitterAvroModelFromStatus(Status status){
+    public TwitterAvroModel getTwitterAvroModelFromStatus(Status status) {
         return TwitterAvroModel
                 .newBuilder()
                 .setId(status.getId())
@@ -17,5 +16,4 @@ public class KafkaStatusToAvroMapper {
                 .setCreatedAt(status.getCreatedAt().getTime())
                 .build();
     }
-
 }

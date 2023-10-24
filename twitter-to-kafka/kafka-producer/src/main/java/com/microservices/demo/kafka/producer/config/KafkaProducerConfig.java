@@ -1,4 +1,4 @@
-package com.microservices.kafka.producer.config;
+package com.microservices.demo.kafka.producer.config;
 
 
 import com.microservices.demo.twitter.to.kafka.config.KafkaConfigData;
@@ -19,15 +19,16 @@ import java.util.Map;
 @Configuration
 public class KafkaProducerConfig <K extends Serializable, V extends SpecificRecordBase> {
 
-        private final KafkaConfigData kafkaConfigData;
+    private final KafkaConfigData kafkaConfigData;
 
-        private final KafkaProducerConfigData kafkaProducerConfigData;
+    private final KafkaProducerConfigData kafkaProducerConfigData;
 
     public KafkaProducerConfig(KafkaConfigData kafkaConfigData, KafkaProducerConfigData kafkaProducerConfigData) {
         this.kafkaConfigData = kafkaConfigData;
         this.kafkaProducerConfigData = kafkaProducerConfigData;
     }
 
+    @Bean
     public Map<String, Object> producerConfig(){
         Map<String, Object> props = new HashMap<>();
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, kafkaConfigData.getBootstrapServers());

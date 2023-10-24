@@ -1,4 +1,4 @@
-package com.microservices.kafka.admin.config;
+package com.microservices.demo.kafka.admin.config;
 
 import com.microservices.demo.twitter.to.kafka.config.KafkaConfigData;
 import org.apache.kafka.clients.CommonClientConfigs;
