@@ -38,7 +38,7 @@
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<lombok.version>1.18.16</lombok.version>
 		<avro.version>1.10.0</avro.version>
-		<kafka-avro-serializer.version>5.5.1</kafka-avro-serializer.version>
+		<kafka-avro-serializer.version>7.4.0</kafka-avro-serializer.version>
 	</properties>
 	<repositories>
 		<repository>
@@ -106,7 +106,7 @@
 			<dependency>
 				<groupId>io.confluent</groupId>
 				<artifactId>kafka-avro-serializer</artifactId>
-				<version>5.5.0</version>
+				<version>${kafka-avro-serializer.version}</version>
 			</dependency>
 
 			<dependency>
@@ -118,6 +118,12 @@
 				<groupId>org.example</groupId>
 				<artifactId>kafka-producer</artifactId>
 				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.xerial.snappy</groupId>
+				<artifactId>snappy-java</artifactId>
+				<version>1.1.8.4</version>
 			</dependency>
 
 		</dependencies>
