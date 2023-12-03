@@ -5,6 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: file://Users/heinz/Documents/developments/rws-twitter-to-kafka/twitter-to=kafka-config-server-repository
+          uri: https://github.com/germanheinz/rws-twitter-to-kafka/twitter-to-kafka-config-server-repository
+          default-label: master
           clone-on-start: true
     fail-fast: true
