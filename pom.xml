@@ -11,6 +11,7 @@
 		<module>twitter-to-kafka-common-config</module>
 		<module>twitter-to-kafka-service</module>
 		<module>twitter-to-kafka-config-server</module>
+		<module>twitter-to-kafka-consumer</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

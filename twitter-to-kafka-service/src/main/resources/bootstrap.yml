@@ -1,9 +1,11 @@
-spring:
-  application:
-    name: twitter-to-kafka-service
-  profiles:
-    active: twitter_to_kafka
-  cloud:
-    config:
-      name: twitter-to-kafka-service,config-client
-      uri: http://localhost:8888
+#spring:
+#  application:
+#    name: configserver
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: file:/C:/Users/heinz/Documents/developments/rws-twitter-to-kafka/twitter-to-kafka-config-server-repository
+#          default-label: master
+#          clone-on-start: true
+#    fail-fast: true
