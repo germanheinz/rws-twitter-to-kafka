@@ -1,7 +1,7 @@
 package com.microservices.demo.kafka.producer.config.service.impl;
 
 
-import com.microservices.demo.kafka.model.avro.model.TwitterAvroModel;
+import com.microservices.kafka.model.TwitterAvroModel;
 import com.microservices.demo.kafka.producer.config.service.KafkaProducer;
 import org.apache.kafka.clients.producer.RecordMetadata;
 import org.slf4j.Logger;
