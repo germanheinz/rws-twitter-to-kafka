@@ -8,11 +8,12 @@
 		<module>twitter-to-kafka/kafka-admin</module>
 		<module>twitter-to-kafka/kafka-model</module>
 		<module>twitter-to-kafka/kafka-producer</module>
+		<module>twitter-to-kafka/kafka-consumer</module>
 		<module>twitter-to-kafka-common-config</module>
 		<module>twitter-to-kafka-service</module>
 		<module>twitter-to-kafka-config-server</module>
-		<module>twitter-to-kafka-consumer</module>
-	</modules>
+        <module>twitter-to-kafka-elastic-service</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -121,6 +122,11 @@
 			<dependency>
 				<groupId>org.example</groupId>
 				<artifactId>kafka-producer</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.example</groupId>
+				<artifactId>kafka-consumer</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 

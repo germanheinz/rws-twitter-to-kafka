@@ -23,7 +23,7 @@ public class KafkaConsumerConfigData {
     private Integer maxPartitionFetchBytesDefault;
     private Integer maxPartitionFetchBytesBoostFactor;
     private Long pollTimeoutMs;
-    private Long sessionTimeoutMs;
+    private Integer sessionTimeoutMs;
 
     public String getKeyDeserializer() {
         return keyDeserializer;
@@ -145,11 +145,11 @@ public class KafkaConsumerConfigData {
         this.pollTimeoutMs = pollTimeoutMs;
     }
 
-    public Long getSessionTimeoutMs() {
+    public Integer getSessionTimeoutMs() {
         return sessionTimeoutMs;
     }
 
-    public void setSessionTimeoutMs(Long sessionTimeoutMs) {
+    public void setSessionTimeoutMs(Integer sessionTimeoutMs) {
         this.sessionTimeoutMs = sessionTimeoutMs;
     }
 }
