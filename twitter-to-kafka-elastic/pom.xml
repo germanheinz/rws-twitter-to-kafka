@@ -9,4 +9,17 @@
     <artifactId>twitter-to-kafka-elastic-module</artifactId>
     <name>Archetype - twitter-to-kafka-elastic-module</name>
     <url>http://maven.apache.org</url>
+    <packaging>pom</packaging>
+    <modules>
+        <module>twitter-to-kafka-elastic-config</module>
+        <module>twitter-to-kafka-elastic-model</module>
+        <module>twitter-to-kafka-elastic-client</module>
+    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 </project>

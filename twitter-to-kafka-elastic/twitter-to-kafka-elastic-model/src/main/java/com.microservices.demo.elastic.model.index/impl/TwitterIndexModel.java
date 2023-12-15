@@ -29,8 +29,4 @@ public class TwitterIndexModel implements IndexModel {
     @JsonProperty
     private LocalDateTime createAt;
 
-    @Override
-    public String getId() {
-        return null;
-    }
 }

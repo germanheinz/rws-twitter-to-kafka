@@ -10,6 +10,7 @@
     <artifactId>twitter-to-kafka-elastic-config</artifactId>
     <name>Archetype - twitter-to-kafka-elastic-config</name>
     <url>http://maven.apache.org</url>
+    <version>0.0.1-SNAPSHOT</version>
 
 
     <dependencies>

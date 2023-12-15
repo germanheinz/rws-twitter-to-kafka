@@ -14,9 +14,6 @@
 		<module>twitter-to-kafka-config-server</module>
         <module>twitter-to-kafka-elastic-service</module>
         <module>twitter-to-kafka-elastic</module>
-		<module>twitter-to-kafka-elastic/twitter-to-kafka-elastic-config</module>
-		<module>twitter-to-kafka-elastic/twitter-to-kafka-elastic-model</module>
-		<module>twitter-to-kafka-elastic/twitter-to-kafka-elastic-client</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -43,7 +40,6 @@
 		<java.version>11</java.version>
 		<spring-boot.version>2.3.4.RELEASE</spring-boot.version>
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-		<lombok.version>1.18.16</lombok.version>
 		<avro.version>1.10.0</avro.version>
 		<kafka-avro-serializer.version>7.4.0</kafka-avro-serializer.version>
 		<spring-cloud.version>2.2.6.RELEASE</spring-cloud.version>
@@ -177,6 +173,21 @@
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>twitter-to-kafka-elastic-model</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>twitter-to-kafka-elastic-config</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>twitter-to-kafka-elastic-client</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 

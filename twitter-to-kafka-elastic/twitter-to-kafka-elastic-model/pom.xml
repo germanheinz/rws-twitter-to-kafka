@@ -9,6 +9,7 @@
     </parent>
     <artifactId>twitter-to-kafka-elastic-model</artifactId>
     <name>Archetype - twitter-to-kafka-elastic-model</name>
+    <version>0.0.1-SNAPSHOT</version>
     <url>http://maven.apache.org</url>
 
     <dependencies>
@@ -20,6 +21,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
