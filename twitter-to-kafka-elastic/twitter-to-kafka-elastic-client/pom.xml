@@ -7,15 +7,14 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-    <artifactId>twitter-to-kafka-elastic-config</artifactId>
-    <name>Archetype - twitter-to-kafka-elastic-config</name>
+    <artifactId>twitter-to-kafka-elastic-client</artifactId>
+    <name>Archetype - twitter-to-kafka-elastic-client</name>
     <url>http://maven.apache.org</url>
-
 
     <dependencies>
         <dependency>
             <groupId>com.microservices.demo</groupId>
-            <artifactId>twitter-to-kafka-config</artifactId>
+            <artifactId>twitter-to-kafka-elastic-model</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -23,18 +22,15 @@
             <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
+            <groupId>com.microservices.demo</groupId>
+            <artifactId>twitter-to-kafka-config</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.elasticsearch</groupId>
-            <artifactId>elasticsearch</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.elasticsearch.client</groupId>
-            <artifactId>elasticsearch-rest-high-level-client</artifactId>
+            <groupId>org.twitter4j</groupId>
+            <artifactId>twitter4j-core</artifactId>
+            <version>4.0.7</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
-
-
 </project>
