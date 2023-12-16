@@ -10,10 +10,10 @@
 		<module>twitter-to-kafka/kafka-producer</module>
 		<module>twitter-to-kafka/kafka-consumer</module>
 		<module>twitter-to-kafka-common-config</module>
-		<module>twitter-to-kafka-service</module>
 		<module>twitter-to-kafka-config-server</module>
         <module>twitter-to-kafka-elastic-service</module>
         <module>twitter-to-kafka-elastic</module>
+		<module>twitter-to-kafka-service</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
