@@ -174,8 +174,8 @@
 			</dependency>
 
 			<dependency>
-				<groupId>com.microservices.demo</groupId>
-				<artifactId>twitter-to-kafka-elastic-model</artifactId>
+				<groupId>\com.microservices.demo</groupId>
+				<artifactId>twitter-to-kafka-elastic-service</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>

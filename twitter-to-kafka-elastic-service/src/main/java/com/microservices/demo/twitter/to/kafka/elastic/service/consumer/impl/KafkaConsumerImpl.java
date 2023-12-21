@@ -7,7 +7,8 @@ import com.microservices.demo.twitter.to.kafka.config.KafkaConfigData;
 import com.microservices.demo.twitter.to.kafka.config.KafkaConsumerConfigData;
 import com.microservices.demo.twitter.to.kafka.elastic.service.consumer.KafkaConsumer;
 import com.microservices.demo.twitter.to.kafka.elastic.service.transformer.AvroToElasticModelTransformer;
-import com.microservices.kafka.avro.model.TwitterAvroModel;
+
+import com.microservices.kafka.model.TwitterAvroModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.event.ApplicationStartedEvent;

@@ -1,7 +1,7 @@
 package com.microservices.demo.twitter.to.kafka.elastic.service.transformer;
 
 import com.microservices.demo.elastic.model.index.impl.TwitterIndexModel;
-import com.microservices.kafka.avro.model.TwitterAvroModel;
+import com.microservices.kafka.model.TwitterAvroModel;
 import org.springframework.stereotype.Component;
 
 import java.time.Instant;
@@ -16,7 +16,8 @@ public class AvroToElasticModelTransformer {
 
     public List<TwitterIndexModel> getElasticModels(List<TwitterAvroModel> avroModels){
 
-        return avroModels.stream()
+
+        List<TwitterIndexModel> list = avroModels.stream()
                 .map(avroModel -> TwitterIndexModel
                         .builder()
                         .userId(avroModel.getUserId())
@@ -26,6 +27,7 @@ public class AvroToElasticModelTransformer {
                                 ZoneId.systemDefault()))
                         .build()
                 ).collect(Collectors.toList());
+        return list;
     }
 
 }
