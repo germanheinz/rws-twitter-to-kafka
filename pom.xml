@@ -14,6 +14,7 @@
         <module>twitter-to-kafka-elastic-service</module>
         <module>twitter-to-kafka-elastic</module>
 		<module>twitter-to-kafka-service</module>
+		<module>twitter-to-kafka-elastic/twitter-to-kafka-elastic-query-client</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -174,7 +175,7 @@
 			</dependency>
 
 			<dependency>
-				<groupId>\com.microservices.demo</groupId>
+				<groupId>com.microservices.demo</groupId>
 				<artifactId>twitter-to-kafka-elastic-service</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>

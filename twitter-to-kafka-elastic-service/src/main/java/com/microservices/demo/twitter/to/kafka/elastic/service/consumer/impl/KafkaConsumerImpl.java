@@ -64,7 +64,7 @@ public class KafkaConsumerImpl implements KafkaConsumer<Long, TwitterAvroModel> 
             @Header(KafkaHeaders.RECEIVED_MESSAGE_KEY) List<Integer> keys,
             @Header(KafkaHeaders.RECEIVED_PARTITION_ID) List<Integer> partitions,
             @Header(KafkaHeaders.OFFSET) List<Long> offsets) {
-        LOG.info("LALAAAA LOMM!!!!!!!!!!!!!!!!!!!!!!! {} number of message received with keys {}, partitions {} and offsets {}, " + "sending it to elastic: Thread id {}", messages.size(), keys.toString(), partitions.toString(), offsets.toString(), Thread.currentThread().getId());
+        LOG.info("LALAAAA LOMM!!!!!!!!!!!! {} number of message received with keys {}, partitions {} and offsets {}, " + "sending it to elastic: Thread id {}", messages.size(), keys.toString(), partitions.toString(), offsets.toString(), Thread.currentThread().getId());
 
         List<TwitterIndexModel> twitterIndexModels = avroToElasticModelTransformer.getElasticModels(messages);
 
