@@ -15,7 +15,8 @@
         <module>twitter-to-kafka-elastic</module>
 		<module>twitter-to-kafka-service</module>
 		<module>twitter-to-kafka-elastic/twitter-to-kafka-elastic-query-client</module>
-	</modules>
+        <module>twitter-to-kafka-elastic-query-service</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
