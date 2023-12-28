@@ -1,4 +1,4 @@
-package com.microservices.demo.twitter.to.kafka.elastic.query.client.service;
+package com.microservices.demo.twitter.to.kafka.elastic.query.client.repository;
 
 import com.microservices.demo.elastic.model.index.impl.TwitterIndexModel;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;

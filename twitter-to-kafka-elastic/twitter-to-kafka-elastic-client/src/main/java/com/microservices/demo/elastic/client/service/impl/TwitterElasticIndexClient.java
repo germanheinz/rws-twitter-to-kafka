@@ -16,7 +16,7 @@ import java.util.List;
 
 @Service
 @ConditionalOnProperty(name = "elastic-config.is-repository", havingValue = "false")
-public class TwitterElasticIndexClient implements ElasticIndexClient<TwitterIndexModel> {
+public class TwitterElasticIndexClient<T> implements ElasticIndexClient<TwitterIndexModel> {
 
     private static final Logger LOG = LoggerFactory.getLogger(TwitterElasticIndexClient.class);
     private final ElasticConfigData elasticConfigData;

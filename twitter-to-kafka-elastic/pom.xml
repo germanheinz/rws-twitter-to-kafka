@@ -14,6 +14,7 @@
         <module>twitter-to-kafka-elastic-config</module>
         <module>twitter-to-kafka-elastic-model</module>
         <module>twitter-to-kafka-elastic-client</module>
+        <module>twitter-to-kafka-elastic-query-client</module>
     </modules>
     <dependencies>
         <dependency>

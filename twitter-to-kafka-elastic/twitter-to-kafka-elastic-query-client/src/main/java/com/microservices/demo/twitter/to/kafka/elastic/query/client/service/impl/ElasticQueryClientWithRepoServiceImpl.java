@@ -3,7 +3,7 @@ package com.microservices.demo.twitter.to.kafka.elastic.query.client.service.imp
 
 import com.microservices.demo.elastic.model.index.impl.TwitterIndexModel;
 import com.microservices.demo.twitter.to.kafka.elastic.query.client.service.ElasticQueryServiceClient;
-import com.microservices.demo.twitter.to.kafka.elastic.query.client.service.ElasticSearchQueryRepository;
+import com.microservices.demo.twitter.to.kafka.elastic.query.client.repository.ElasticSearchQueryRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Primary;
